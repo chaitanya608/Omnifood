@@ -1,0 +1,1 @@
+/vendors/css folder is reserved for styles imported from external sources
