@@ -89,14 +89,15 @@ h2:after {
     width: 70%;
     /* since width is set to 70% left and right margins should be 15% each so as to center the para appropriately. */
     margin-left: 15%;
-    /* text-align property isn't used in the tutor's code */
+    /* text-align property isn't used in the Jonas's code */
     text-align: center;
 }
 
 .box p {
     font-size: 90%;
     line-height: 145%;
-    /* text-align: justify; */
+    /* text-align property isn't used for paras within box but still I like them to be more organized. */
+    text-align: justify;
 }
 
 /* ----- ICONS ----- */
@@ -205,6 +206,56 @@ header {
 }
 
 
+/*---------------------------------------------*/
+/* HEADER */
+/*---------------------------------------------*/
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/*---------------------------------------------*/
+/* MEALS */
+/*---------------------------------------------*/
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+/* We set margin to 0 again here even though margins are set to 0 in * selector, so as to offset the formatting from normalize.css file */
+    margin: 0;
+/* We hide whatever content that overflows out of their respective containers. In this case we expect images to overflow out of containers as we scaled them up by 15% (look below) */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+/* Here we initially scale the images to 15% larger than original and when hovered we scale them down to 1.03 times the original. Why 1.03 instead of 1.0? To eliminate some extra white space that's appearing below images when scaled to 1.0 */
+    transform: scale(1.03);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Jonas set initial scale to 1.15 and hoved scaled to 1.03 so that images appear zoomed out when hovered. But I prefer they zoom in when hovered, which is why I set initial scale to 1.03 and hovered scale to 1.15 */
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
 
 
 
