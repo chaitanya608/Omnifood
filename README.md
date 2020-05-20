@@ -13,7 +13,7 @@ Learning areas:
 * Working with fluid-grid layout
 
 Project's Progress:
-* Completed building favorite meals section of the page. (Section 5.44)
-At this point there are three main parts of the page - header, features & favorite meals
-Building the header part was done by Section 5.40, features section by 5.42 and favorite meals sections by 5.44
-* Second commit happened here.
+* Completed building "How-It-Works" section of the page. (Section 5.46).
+At this point there are four main parts of the page - header, features, favorite meals & how-it-works.
+Bulding header part was done by Section 5.40, features part by Section 5.42, favorite meals part by Section 5.44 and how-it-works part by Section 5.46
+* Third commit happened here.
