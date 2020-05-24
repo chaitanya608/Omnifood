@@ -200,6 +200,7 @@ header {
 /*  since the background image is located within the header element its dimensions can only be as much as header's. So we set header's height to be as much as the viewport.  */
 /*  100vh means 100% of the viewport  */
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -363,4 +364,44 @@ header {
 
 .city-feature {
     margin-bottom: 5px;
+}
+
+/*---------------------------------------------*/
+/* TESTIMONIALS */
+/*---------------------------------------------*/
+.section-testimonials {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
